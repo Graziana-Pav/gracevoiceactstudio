@@ -1,0 +1,133 @@
+/* Nanbar customization */
+.navbar{
+    position: fixed;
+    z-index: 1; /* Position + z-index to appear over carousel */
+    width: 97vw;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    top: 0;
+}
+
+/* Customization of menu button border */
+.navbar-toggler{
+    border: var(--bs-border-width) solid white;
+}
+
+/* Customization of menu button lines */
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.navbar-logo{
+    width: 20vw;
+}
+
+/* Customization of bg navbar */
+.bg-primary{
+    background-color:#282828 !important;
+}
+
+/* Customization of text align of menu links */
+.navbar-collapse{
+    text-align: right;
+}
+
+/* Customization of logo and button position */
+.container-nav{
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+}
+
+footer{
+    background-color:#282828 !important;
+}
+
+.d-flex{
+    margin-bottom: 0 !important;
+}
+
+.footer-menu{
+    margin-left: -1vw;
+}
+
+.nav-link{
+  color: rgba(215, 215, 215, 0.7);
+  text-decoration: underline;
+}
+
+.copyright{
+    margin-left: 1vw;
+    color: white;
+}
+
+
+.quote{
+    text-align: center;
+    padding: 50px;
+    font-family: orpheuspro, serif;
+    font-size: 2rem;
+    margin-top: 3vh !important;
+    margin-bottom: 3vh !important;
+}
+
+.container-img{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.img-home{
+    width: 100%;
+}
+
+.columns{
+    text-align: center;
+    width: 100%;
+}
+
+.description{
+    text-align: center;
+    font-family: orpheuspro, serif;
+    font-size: 1.4rem;
+}
+
+.title {
+    text-align: center;
+    font-family: "Orpheus Pro", serif;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    line-height: 1.4;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    padding-top: 0;
+}
+
+.submissions{
+    margin: 5vh;
+}
+
+.title-sub{
+    text-align: center;
+    font-family: "Orpheus Pro", serif;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    line-height: 1.4;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    padding-bottom: 1.5vh;
+}
+
+.button-div{
+    text-align: center;
+    padding: 10px;
+}
+
+#cb-cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    border-radius: 0;
+    display: none;
+}

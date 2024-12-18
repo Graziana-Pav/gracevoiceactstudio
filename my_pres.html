@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>Grace Voice Art Studio</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
+  <style>
+    .reveal .sourceCode {  /* see #7635 */
+      overflow: visible;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/black.css" id="theme">
+  <link rel="stylesheet" href="my_revealjs_style.css"/>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Grace Voice Art Studio</h1>
+</section>
+
+<section>
+<section id="project-analysis" class="title-slide slide level1">
+<h1>Project Analysis</h1>
+
+</section>
+<section id="website-subject" class="slide level2">
+<h2>Website subject</h2>
+<p>The objective of this project is to create an engaging and
+professional online platform for the “Grace Dubbing Studio.” The website
+aims to showcase the studio’s expertise in voice acting and dubbing,
+offering a space to promote its services, highlight ongoing projects,
+and attract aspiring voice actors for training opportunities. With a
+user-friendly interface and dynamic multimedia elements, the site
+emphasizes the studio’s commitment to quality and its role in inspiring
+the next generation of talent in the voice acting industry.</p>
+</section>
+<section id="files-and-their-purpose" class="slide level2">
+<h2>Files and Their Purpose</h2>
+</section>
+<section id="index.html" class="slide level2">
+<h2>index.html:</h2>
+<p>This file serves as the backbone of the website. It defines the
+website’s structure using HTML (HyperText Markup Language). It organizes
+the content, such as text, images, forms, and navigation menus, into a
+readable format for web browsers. HTML files are essential for defining
+the skeleton of a web page, ensuring all elements are displayed
+correctly.</p>
+</section>
+<section id="index.css" class="slide level2">
+<h2>index.css:</h2>
+<p>This file handles the visual styling of the website. CSS (Cascading
+Style Sheets) controls the layout, colors, fonts, and other design
+aspects. It allows for the separation of content (HTML) from
+presentation, which makes the site easier to maintain and update while
+improving the user experience.</p>
+</section>
+<section id="index.js" class="slide level2">
+<h2>index.js:</h2>
+<p>This JavaScript file adds interactivity to the website. It includes
+functionality like the display and management of a cookie banner,
+dynamic form behaviors, and responsive menu actions. JavaScript enables
+a more interactive and dynamic user experience, which is vital for
+modern websites.</p>
+</section>
+<section id="init.php" class="slide level2">
+<h2>init.php:</h2>
+<p>This PHP file is used to initialize server-side configurations or
+database connections. PHP (Hypertext Preprocessor) allows for the
+creation of dynamic content by interacting with databases, managing
+sessions, or performing server-side logic. This is critical for features
+like forms and user submissions. IT IS A PLACEHOLDER</p>
+</section>
+<section id="why-do-we-need-all-these-files" class="slide level2">
+<h2>Why do we need all these files?</h2>
+<ul>
+<li>Separation of Concerns</li>
+<li>Scalability</li>
+<li>Enhanced User Experience</li>
+</ul>
+</section></section>
+<section>
+<section id="html" class="title-slide slide level1">
+<h1>HTML</h1>
+
+</section>
+<section id="html-1" class="slide level2">
+<h2>HTML 1</h2>
+<p><img data-src="./imgs/html_screen/html_1.png" /></p>
+<p>This HTML code creates the basic structure of a web page using
+Bootstrap</p>
+<ol type="1">
+<li><strong>Page Title:</strong>
+<title>
+Home - Voice Art Studio
+</title>
+sets the name displayed in the browser tab.</li>
+<li><strong>Bootstrap CSS:</strong> Links Bootstrap’s stylesheet to
+style the webpage easily and make it look good.</li>
+<li><strong>Custom CSS:</strong> A separate custom stylesheet
+(index.css) allows for personalized styling.</li>
+<li><strong>Favicon:</strong> Adds a small custom icon (imgs/fav.png)
+visible next to the page title in the browser tab.</li>
+<li><strong>Bootstrap JavaScript:</strong> Adds functionality like
+dropdown menus or modals using Bootstrap’s JavaScript library.</li>
+</ol>
+</section>
+<section id="html-2" class="slide level2">
+<h2>HTML 2</h2>
+<p><img data-src="./imgs/html_screen/html_2.png" /></p>
+<p>This code creates a cookie banner for a website</p>
+<ol type="1">
+<li><strong>HTML Structure:</strong>
+https://kolappannathan.github.io/bootstrap-cookie-banner/</li>
+<li><strong>Button:</strong> A button is shown with the text “I Got It”.
+When the button is clicked, it runs the JavaScript function
+cb_hideCookieBanner() to hide the cookie banner.</li>
+<li><strong>Styling:</strong> The banner uses Bootstrap classes like
+alert, alert-dark, text-center for a styled alert box.</li>
+<li><strong>JavaScript File:</strong> At the end, the file index.js is
+linked to the page. It likely contains the cb_hideCookieBanner()
+function that hides the banner when the button is clicked.</li>
+</ol>
+</section>
+<section id="html-3" class="slide level2">
+<h2>HTML 3</h2>
+<p><img data-src="./imgs/html_screen/html_3.png" /></p>
+<p>This code creates an image carousel (a slideshow) on a webpage using
+Bootstrap</p>
+<ol type="1">
+<li><strong>Carousel Container:</strong> It’s wrapped in a div with the
+ID carouselExampleAutoplaying. The data-bs-ride=“carousel” makes the
+carousel slide automatically.</li>
+<li><strong>Indicators (Navigation Dots):</strong> The button elements
+at the top create small navigation dots. Each button corresponds to a
+slide (Slide 1, Slide 2, Slide 3) and allows users to jump directly to
+that slide.</li>
+</ol>
+</section>
+<section class="slide level2">
+
+<ol start="3" type="1">
+<li><strong>Slides:</strong> The carousel-inner container holds three
+slides. Each slide is a div with the class carousel-item. First Slide:
+Contains an image studio-speakeraggio-1.png and is marked as active (it
+appears first). Second Slide: Displays the image
+studio-speakeraggio-2.png. Third Slide: Displays the image
+studio-speakeraggio-3.png.</li>
+<li><strong>Image Display:</strong> Images are displayed in full width
+(w-100) and are responsive to fit the screen (d-block).</li>
+<li><strong>How It Works:</strong> The carousel automatically rotates
+through the slides. Users can manually navigate using the dots
+(indicators).</li>
+</ol>
+</section>
+<section id="html-4" class="slide level2">
+<h2>HTML 4</h2>
+<p><img data-src="./imgs/html_screen/html_4.png" /></p>
+<p>This code adds navigation controls (buttons) to a carousel
+slideshow.</p>
+<ol type="1">
+<li><strong>Two Buttons:</strong> “Previous” button: Allows users to go
+to the previous slide. “Next” button: Allows users to go to the next
+slide.</li>
+<li><strong>Attributes:</strong>
+data-bs-target=“#carouselExampleAutoplaying”: Links the buttons to the
+carousel with the ID carouselExampleAutoplaying. data-bs-slide=“prev”
+and data-bs-slide=“next”: Specify whether the button moves to the
+previous or next slide.</li>
+<li><strong>Icons and Text:</strong> Each button includes an icon
+(carousel-control-prev-icon or carousel-control-next-icon) to display
+arrows. The “span class=”visually-hidden”&gt;Previous span” and “span
+class=”visually-hidden”&gt;Next span” text are for screen readers to
+improve accessibility.</li>
+</ol>
+</section>
+<section id="html-5" class="slide level2">
+<h2>HTML 5</h2>
+<p><img data-src="./imgs/html_screen/html_5.png" /></p>
+</section>
+<section class="slide level2">
+
+<p>This code creates a responsive navigation bar (navbar) using
+Bootstrap</p>
+<ol type="1">
+<li><strong>Navbar Container:</strong> It has a dark theme
+(data-bs-theme=“dark”) and a blue background (bg-primary).</li>
+<li><strong>Brand Logo:</strong> A clickable logo is displayed with an
+image (imgs/logo.png) and links to the home page (href=“#”).</li>
+<li><strong>Navbar Toggler:</strong> A “hamburger menu” button appears
+on smaller screens. When clicked, it expands or collapses the navigation
+links.</li>
+<li><strong>Navigation Links:</strong> A list of links is displayed:
+Home (active by default). Story links to #intro. Projects links to
+#projects. Submissions links to #sub.</li>
+<li><strong>Responsive Behavior:</strong> The collapse class ensures
+that the links are hidden on small screens and displayed only when the
+“hamburger menu” button is clicked.</li>
+</ol>
+</section>
+<section id="html-6" class="slide level2">
+<h2>HTML 6</h2>
+<p><img data-src="./imgs/html_screen/html_6.png" /></p>
+<p>This code creates a 2-column layout with text on one side and an
+embedded Instagram post on the other.</p>
+<ol type="1">
+<li><strong>Container Setup:</strong> A Bootstrap container (container
+columns) groups all content. Inside it, a row divides the layout into
+columns.</li>
+<li><strong>First Column - Text Description:</strong> Contains a
+paragraph (p) that introduces Graziana Pavone as a talented voice actor,
+influencer, and entrepreneur.</li>
+<li><strong>Second Column - Embedded Instagram Post:</strong> Uses an
+iframe to embed an Instagram post. An iframe (short for inline frame) is
+an HTML element used to embed another document, web page, video, or
+other external content into the current webpage.</li>
+</ol>
+</section>
+<section id="html-7" class="slide level2">
+<h2>HTML 7</h2>
+<p><img data-src="./imgs/html_screen/html_7.png" /></p>
+<p>This code displays an image and a text heading on a webpage.</p>
+<ol type="1">
+<li><p><strong>Container for the Image:</strong> The div with class
+container container-img wraps the image. The img tag displays an image
+located at imgs/voice-acting.png. It has the class img-home for styling
+purposes.</p></li>
+<li><p><strong>Text Section:</strong> A div with the classes quote title
+contains a paragraph. The p tag displays the text “OUR PROJECTS” in bold
+or styled format.</p></li>
+</ol>
+</section>
+<section id="html-8" class="slide level2">
+<h2>HTML 8</h2>
+<p><img data-src="./imgs/html_screen/html_8.png" /></p>
+<p>This code creates a 3-column layout that embeds Instagram posts side
+by side on a webpage.</p>
+<ol type="1">
+<li><strong>Container Setup:</strong> A container holds all the content
+and is identified by id=“projects”. Inside it, there’s a row to organize
+the columns.</li>
+<li><strong>Three Columns:</strong> Each column (col) contains an
+iframe. The iframe embeds an Instagram post using its src link.</li>
+<li><strong>Attributes of the iframe:</strong> Embed-responsive-4by3:
+Ensures the iframe maintains a 4:3 aspect ratio for responsiveness
+(https://stackoverflow.com/questions/25228056/responsive-iframe-using-bootstrap)</li>
+</ol>
+</section>
+<section id="html-9" class="slide level2">
+<h2>HTML 9</h2>
+<p><img data-src="./imgs/html_screen/html_9.png" /></p>
+</section>
+<section class="slide level2">
+
+<p>This code creates a submission form that collects user information,
+such as name, surname, email, mobile, and social details.</p>
+<ol type="1">
+<li><strong>Form Container:</strong> The form element has a class
+submissions and an ID sub. It groups all the input fields and the submit
+button.</li>
+<li><strong>Input Fields:</strong> Name, Surname, E-mail, Mobile,
+Social</li>
+<li><strong>Submit Button:</strong> A button element styled with btn
+btn-primary that shows the text “Submit”. Type=“button”: This button
+does not submit the form by default; it would need JavaScript to handle
+actions.</li>
+<li><strong>How It Works:</strong> Users fill out the form fields (Name,
+Surname, Email, etc.). The form is clean and styled using Bootstrap
+classes (form-control and btn btn-primary). The submit button can be
+used to trigger an action, such as sending the data or validating the
+form. <strong>It is a placeholder because php has not been fully
+implemented</strong></li>
+</ol>
+</section>
+<section id="html-10" class="slide level2">
+<h2>HTML 10</h2>
+<p><img data-src="./imgs/html_screen/html_10.png" /></p>
+<p>This code creates a footer section for a webpage.</p>
+<ol type="1">
+<li><strong>Footer Container:</strong> The footer uses Bootstrap classes
+like d-flex and flex-wrap to create a flexible and responsive layout.
+The content is aligned horizontally and evenly spaced.</li>
+<li><strong>Copyright Text</strong></li>
+<li><strong>Logo Link:</strong> A clickable logo is added using an a
+tag. The logo image (imgs/logo1.png) is displayed at a size of 40x40
+pixels.</li>
+<li><strong>Navigation Links:</strong> Each link is styled using
+Bootstrap classes like nav-link and text-body-secondary.</li>
+</ol>
+</section></section>
+<section>
+<section id="css" class="title-slide slide level1">
+<h1>CSS</h1>
+
+</section>
+<section id="css-1" class="slide level2">
+<h2>CSS 1</h2>
+<p><img data-src="./imgs/css_screen/css_1.png" /></p>
+<p>This CSS code is for Navbar Customization:</p>
+<ul>
+<li>Styles the navigation bar (.navbar) as fixed with a width of 97vw
+and centered margins.</li>
+<li>Adjusts the menu toggle button (.navbar-toggler) border to a white
+solid color.</li>
+<li>Inverts the menu toggle icon color.</li>
+<li>Sets a width for the navbar logo.</li>
+</ul>
+</section>
+<section id="css-2" class="slide level2">
+<h2>CSS 2</h2>
+<p><img data-src="./imgs/css_screen/css_2.png" /></p>
+<p>This CSS code is for Background and Alignment:</p>
+<ul>
+<li>Sets a dark background (#282828) for elements with .bg-primary and
+footer.</li>
+<li>Aligns menu links in the navbar to the right
+(.navbar-collapse).</li>
+<li>Adds margins for the logo and button container
+(.container-nav).</li>
+<li>Sets margin-botton=0 using .d-flex class</li>
+</ul>
+</section>
+<section id="css-3" class="slide level2">
+<h2>CSS 3</h2>
+<p><img data-src="./imgs/css_screen/css_3.png" /></p>
+<p>This CSS code is for Links and Footer Text:</p>
+<ul>
+<li>Styles navigation links (.nav-link) with a semi-transparent white
+color and underline.</li>
+<li>Adjusts copyright text color and margins.</li>
+<li>Centers and styles a quote (.quote) with custom font, padding, and
+spacing.</li>
+</ul>
+</section>
+<section id="css-4" class="slide level2">
+<h2>CSS 4</h2>
+<p><img data-src="./imgs/css_screen/css_4.png" /></p>
+<p>This CSS code is for Content Container Styling:</p>
+<ul>
+<li>Centers and adds vertical padding to an image container
+(.container-img).</li>
+<li>Ensures images and columns span full width (.img-home,
+.columns).</li>
+<li>Centers text and adjusts font for descriptions.</li>
+</ul>
+</section>
+<section id="css-5" class="slide level2">
+<h2>CSS 5</h2>
+<p><img data-src="./imgs/css_screen/css_5.png" /></p>
+<p>This CSS code is for Title and Submissions:</p>
+<ul>
+<li>Customizes titles (.title, .title-sub) with centered text, bold
+styling, shadows, and proper line spacing.</li>
+<li>Adds margins for a submissions section.</li>
+</ul>
+</section>
+<section id="css-6" class="slide level2">
+<h2>CSS 6</h2>
+<p><img data-src="./imgs/css_screen/css_6.png" /></p>
+<p>This CSS code is for Button and Cookie Banner:</p>
+<ul>
+<li>Centers button content and adds padding.</li>
+<li>Styles a cookie banner (#cb-cookie-banner) as fixed at the bottom of
+the screen with a high z-index but hidden by default (display:
+none).</li>
+</ul>
+</section></section>
+<section>
+<section id="js" class="title-slide slide level1">
+<h1>JS</h1>
+
+</section>
+<section id="js-1" class="slide level2">
+<h2>JS 1</h2>
+<p><img data-src="./imgs/js_screen/js_1.png" /></p>
+<p>This JS code is for Cookie Banner Logic
+(https://kolappannathan.github.io/bootstrap-cookie-banner/):</p>
+<ul>
+<li>Displays or hides a cookie consent banner based on
+localStorage.</li>
+<li>showCookieBanner() displays the banner.</li>
+<li>hideCookieBanner() hides the banner and sets cb_isCookieAccepted to
+“yes” in localStorage.</li>
+<li>initializeCookieBanner() checks if the user has accepted cookies; if
+not, it shows the banner.</li>
+</ul>
+</section>
+<section id="js-2" class="slide level2">
+<h2>JS 2</h2>
+<p><img data-src="./imgs/js_screen/js_2.png" /></p>
+<p>This JS code is for Navbar Collapse on Link Click:</p>
+<ul>
+<li>Listens for clicks on navigation links (.nav-link).</li>
+<li>When a link is clicked, it collapses (hides) the Bootstrap
+navigation menu by toggling its visibility using
+bootstrap.Collapse.</li>
+</ul>
+</section>
+<section id="js-3" class="slide level2">
+<h2>JS 3</h2>
+<p><img data-src="./imgs/js_screen/js_3.png" /></p>
+<p>This JS code is for Collect Form Data on Button Click:</p>
+<ul>
+<li>Adds an event listener to a button (generateTxtButton).</li>
+<li>Retrieves values from form inputs (name, surname, email, mobile,
+social).</li>
+<li>Prepares data to create a text file using PHP (commented but not
+implemented).</li>
+<li><strong>IT IS A PLACEHOLDER - NOT IMPLEMENTED</strong></li>
+</ul>
+</section></section>
+<section id="php" class="title-slide slide level1">
+<h1>PHP</h1>
+<p><strong>IT IS A PLACEHOLDER - NOT IMPLEMENTED</strong></p>
+</section>
+
+<section id="acknowledgments" class="title-slide slide level1">
+<h1>Acknowledgments</h1>
+<p>Thank you very much for your time and attention. I truly appreciate
+your effort in reviewing this and look forward to any feedback or
+suggestions you might have.</p>
+</section>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
+
+  <!-- reveal.js plugins -->
+  <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'convex',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // reveal.js plugins
+        plugins: [
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>

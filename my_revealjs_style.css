@@ -1,0 +1,35 @@
+.reveal h1 {
+    font-size: 5em;
+}
+
+@media screen and (max-width: 4000px), (max-height: 6000px) {
+
+
+    .reveal .slides {
+        font-size: 0.50em;
+    }
+
+    img {
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width: 900px), (max-height: 600px) {
+    .reveal .slides {
+        font-size: 0.50em;
+    }
+
+    img {
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width: 700px), (max-height: 400px) {
+    .reveal .slides {
+        font-size: 0.50em;
+    }
+
+    img {
+        height: 40vh;
+    }
+}

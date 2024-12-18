@@ -1,0 +1,179 @@
+<?php include 'php/init.php'; ?>
+
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home - Grace Voice Art Studio</title>
+    <!-- Link Bootstrap css file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Link custom css file -->
+    <link href="index.css" rel="stylesheet">
+    <!-- Use a custom favicon -->
+    <link rel="icon" type="image/png" href="imgs/fav.png">
+    <!-- Link Bootstrap js file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <!-- Cookie Banner -->
+    <div id="cb-cookie-banner" class="alert alert-dark text-center mb-0" role="alert">
+      🍪 This website uses cookies to ensure you get the best experience on our website.
+      <a href="https://www.cookiesandyou.com/" target="blank">Learn more</a>
+      <button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.cb_hideCookieBanner()">
+      I Got It
+      </button>
+    </div>
+    <!-- End of Cookie Banner --> 
+
+    <!-- Link custom js file -->
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <!-- Carousel -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imgs/studio-speakeraggio-1.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="imgs/studio-speakeraggio-2.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="imgs/studio-speakeraggio-3.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <!-- Carousel controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar bg-primary" data-bs-theme="dark">
+      <div class="container container-nav">
+        <a class="navbar-brand" href="#">
+          <img class="navbar-logo" src="imgs/logo.png">
+        </a>
+        <!-- Navbar toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#intro">Story</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sub">Submissions</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="quote">
+      <p>The essential is invisible to the eye</p>
+      <p>Grasping the essence is<strong> the purpose of our work</strong></p>
+    </div>
+
+    <!-- Container w/ 2 columns -->
+    <div class="container columns intro" id="intro">
+      <div class="row">
+        <div class="col">
+          <div class="description">
+            <p>Graziana Pavone is a talented voice actor, influencer, and entrepreneur who has made her mark in the world of dubbing. With years of experience in animation, audiobooks, and commercials, she turned her passion for voice artistry into a mission to train the next generation of talent. This led to the creation of the Grace Dubbing Studio, a professional training hub for aspiring voice actors. Known for her dynamic teaching approach and industry expertise, Graziana inspires her students and followers alike, sharing behind-the-scenes insights and practical tips through her vibrant online presence.</p>
+          </div>
+        </div>
+        <!-- Instagram post embedded using iFrame -->
+        <div class="col embed-responsive embed-responsive-4by3">
+          <iframe src="https://www.instagram.com/p/CtCMuM6Ihek/embed" width="350vw" height="480" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="container container-img">
+      <img class="img-home" src="imgs/voice-acting.png" alt="">
+    </div>
+
+    <div class="quote title">
+      <p>OUR PROJECTS</p>
+    </div>
+
+    <!-- Container w/ 3 columns -->
+    <div class="container columns" id="projects">
+      <div class="row">
+        <div class="col embed-responsive embed-responsive-4by3">
+          <iframe class="embed-responsive-item" src="https://www.instagram.com/reel/DCB3YY0oMVP/embed" width="350vw" height="440" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+        </div>
+        <div class="col embed-responsive embed-responsive-4by3">
+          <iframe class="embed-responsive-item" src="https://www.instagram.com/reel/DAOFh1io2-t/embed" width="350vw" height="440" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+        </div>
+        <div class="col embed-responsive embed-responsive-4by3">
+          <iframe class="embed-responsive-item" src="https://www.instagram.com/reel/C_XtYkdIPf5/embed" width="350vw" height="440" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="quote title-sub">
+      <p>ENTER THE DUBBING STUDIO</p>
+    </div>
+
+    <!-- Submissions form -->
+    <form class="submissions" id="sub">
+      <div class="form-group">
+        <label for="nameInput">Name</label>
+        <input type="text" class="form-control" id="nameInput" placeholder="Name">
+      </div>
+      <div class="form-group">
+        <label for="surnameInput">Surname</label>
+        <input type="text" class="form-control" id="surnameInput" placeholder="Surname">
+      </div>
+      <div class="form-group">
+        <label for="emailInput">E-mail</label>
+        <input type="email" class="form-control" id="emailInput" placeholder="E-mail">
+      </div>
+      <div class="form-group">
+        <label for="mobileInput">Mobile</label>
+        <input type="text" class="form-control" id="mobileInput" placeholder="Mobile">
+      </div>
+      <div class="form-group">
+        <label for="socialInput">Social</label>
+        <input type="text" class="form-control" id="socialInput" placeholder="Social">
+      </div>
+      <div class="button-div">
+        <button type="button" class="btn btn-primary" id="generateTxtButton">Submit</button>
+      </div>
+    </form>
+
+    <!-- Footer -->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-body-secondary copyright">© 2024 Grace V.A.S.</p>
+  
+      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none footer-logo">
+        <img src="imgs/logo1.png" class="bi me-2" width="40" height="40"></img>
+      </a>
+  
+      <ul class="nav col-md-4 justify-content-end footer-menu">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="#intro" class="nav-link px-2 text-body-secondary">Story</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link px-2 text-body-secondary">Projects</a></li>
+        <li class="nav-item"><a href="#sub" class="nav-link px-2 text-body-secondary">Submissions</a></li>
+    </footer>
+  </body>
+</html>
